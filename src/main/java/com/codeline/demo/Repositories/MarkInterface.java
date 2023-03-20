@@ -20,5 +20,11 @@ List<Mark> getAllMarks();
     @Query("SELECT m from Mark m where m.id= :markId")
     Mark getMarkById(@Param("markId") Integer id);
 
+
+    @Query(value = "SELECT m from Mark m where m.isActive = true")
+    List<Mark> getAllActiveMark();
+
+    @Query(value = "SELECT m from Mark m where m.isActive = false")
+    List<Mark> getAllUnActiveMark();
     }
 

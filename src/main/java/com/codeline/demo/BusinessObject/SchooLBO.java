@@ -1,2 +1,7 @@
-package com.codeline.demo.BusinessObject;public class SchooLBO {
+package com.codeline.demo.BusinessObject;
+
+
+public class SchooLBO {
+    String name;
+
 }

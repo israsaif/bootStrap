@@ -30,6 +30,7 @@ public class StudentServices {
 
 
     public List<Student> getAllStudent() {
+
         return studentInterface.getAllStudent();
     }
 
@@ -61,6 +62,13 @@ public class StudentServices {
         Integer schoolId = school.getId();
         List<Student> studentList = studentInterface.getSchoolById(schoolId);
         return studentList;
+    }
+    public List<Student> getAllActiveStudent(){
+        return studentInterface.getAllActiveStudent();
+    }
+
+    public List<Student> getAllUnActiveStudent(){
+        return studentInterface.getAllUnActiveStudent();
     }
 
 }

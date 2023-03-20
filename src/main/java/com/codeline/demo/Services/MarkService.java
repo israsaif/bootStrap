@@ -25,4 +25,14 @@ public class MarkService {
                 Mark mark = markInterface.getMarkById(id);
                 return mark;
         }
+        public List<Mark> getAllActiveMark(){
+                return markInterface.getAllActiveMark();
+        }
+
+        public List<Mark> getAllUnActiveMark(){
+                return markInterface.getAllUnActiveMark();
+        }
+
+
+
 }
